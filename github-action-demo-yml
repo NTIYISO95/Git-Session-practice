@@ -1,0 +1,15 @@
+name: github-action-demo-yml
+on:
+  push:
+    branches:
+    - main
+    - release/*
+    on:
+  pull_request:
+    branches:
+    - main
+    on:
+  schedule:
+  - cron: "0 3 * * 1-5"
+  on:
+  workflow_dispatch:
